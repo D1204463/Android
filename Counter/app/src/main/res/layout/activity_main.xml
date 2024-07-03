@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="188dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="200dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="50sp"
@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginTop="308dp"
+        android:onClick="Count"
         android:text="計數"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,8 +48,9 @@
         android:id="@+id/init"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="440dp"
+        android:onClick="Init"
         android:text="歸零"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
