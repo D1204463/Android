@@ -1,6 +1,10 @@
 package com.example.temperature;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +24,19 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void CToF(View view){
+        EditText temperature = (EditText) findViewById(R.id.temp);
+        TextView result = (TextView) findViewById(R.id.result);
+        int t = Integer.parseInt(temperature.getText().toString());
+        double fTemperature = t*9/5+32;
+        result.setText(String.valueOf(fTemperature));
+    }
+    public void FToC(View view){
+        EditText temperature = (EditText) findViewById(R.id.temp);
+        TextView result = (TextView) findViewById(R.id.result);
+        int t = Integer.parseInt(temperature.getText().toString());
+        double cTemperature = (t-32)*5/9;
+        result.setText(String.valueOf(cTemperature));
     }
 }
