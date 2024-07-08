@@ -13,50 +13,42 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:ems="10"
-        android:hint="Num2"
+        android:hint="請輸入第二個數字"
         android:inputType="text"
-        android:text="請輸入第二個數字"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/divide"
-        android:layout_width="127dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="328dp"
-        android:text="/"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/divide"
+        android:id="@+id/multiply"
         android:layout_width="127dp"
         android:layout_height="53dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="328dp"
+        android:onClick="multiply"
         android:text="*"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/divide"
+        android:id="@+id/cut"
         android:layout_width="127dp"
         android:layout_height="53dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="256dp"
+        android:onClick="cut"
         android:text="-"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/divide"
+        android:id="@+id/add"
         android:layout_width="127dp"
         android:layout_height="53dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="256dp"
+        android:onClick="add"
         android:text="+"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -67,9 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:ems="10"
-        android:hint="Num1"
+        android:hint="請輸入第一個數字"
         android:inputType="text"
-        android:text="請輸入第一個數字"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,11 +68,24 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="203dp"
-        android:layout_height="62dp"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="468dp"
         android:text="結果"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="445dp" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="127dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="328dp"
+        android:onClick="divide"
+        android:text="/"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
