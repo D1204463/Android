@@ -68,6 +68,7 @@
                         android:layout_weight="0"
                         android:backgroundTint="#D79323"
                         android:drawableLeft="@android:drawable/ic_menu_call"
+                        android:onClick="callPhone"
                         android:textAlignment="textEnd" />
                 </LinearLayout>
 
@@ -80,6 +81,7 @@
                     android:layout_marginRight="12dp"
                     android:backgroundTint="#CB7C7C"
                     android:drawableLeft="@android:drawable/ic_dialog_map"
+                    android:onClick="GotoYAN"
                     android:singleLine="false"
                     android:text="407台中市西屯區西安街170號"
                     android:textAlignment="textStart"
@@ -100,6 +102,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="411dp"
                 android:layout_height="267dp"
+                android:onClick="YANPage"
                 app:srcCompat="@drawable/scr_20240729_ozmr" />
 
             <ImageView
@@ -119,7 +122,8 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:backgroundTint="#D04C4C"
-        android:text="訂位"
+        android:onClick="YANPage"
+        android:text="FaceBook"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

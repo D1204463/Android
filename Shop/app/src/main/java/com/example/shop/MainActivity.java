@@ -1,6 +1,9 @@
 package com.example.shop;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +24,26 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void YANPage(View view){
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("https://www.facebook.com/Yadingni02/"));
+        startActivity(i);
+    }
+
+    public void GotoYAN(View view){
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("geo:0,0?q=亞丁尼義式麵屋 逢甲店"));
+        startActivity(i);
+    }
+
+    public void callPhone(View view){
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_DIAL);
+        i.setData(Uri.parse("tel:+0424529227"));
+        startActivity(i);
+    }
+
+
 }
